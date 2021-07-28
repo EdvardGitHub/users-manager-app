@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const placesSchema = new mongoose.Schema(
+const usersSchema = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -23,6 +23,6 @@ const placesSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const Users = mongoose.model('Users', placesSchema);
+const Users = mongoose.model('Users', usersSchema);
 
 export default Users;
